@@ -1,0 +1,17 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% set appConfig = config('HeGuStorefrontHints.config') %}
+
+{% block base_header %}
+    {% if appConfig.alertShopHeaderActive %}
+        <div
+            style="background-color: {{ ((appConfig.alertShopHeaderBackgroundColor) ? appConfig.alertShopHeaderBackgroundColor : '#000000') }}">
+            <div class="container py-2"
+                 style="color: {{ ((appConfig.alertShopHeaderTextColor) ? appConfig.alertShopHeaderTextColor : '#ffffff') }}">
+                <div
+                    class="{{ ((appConfig.alertShopHeaderTextBold) ? 'font-weight-bold ' : '') }} {{ ((appConfig.alertShopHeaderTextCentered) ? 'text-center ' : '') }}">{{ appConfig.alertShopHeaderText }}</div>
+            </div>
+        </div>
+    {% endif %}
+    {{ parent() }}
+{% endblock %}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/Framework/App/Manifest/Schema/manifest-1.0.xsd">
+    <meta>
+        <name>HeGuStorefrontHints</name>
+        <label>Individual hints and customer information</label>
+        <label lang="de-DE">Individuelle Hinweise und Kundeninformation</label>
+        <description>Inform your customers with individual notices and customer information in your store. Through numerous setting options, you determine how and where you display the notices.</description>
+        <description lang="de-DE">Informiere Deine Kunden mit individuellen Hinweisen und Kundeninformation in Deinem Shop. Durch zahlreiche Einstellungsmöglichkeiten bestimmst Du, wie und wo du die Hinweise anzeigst.</description>
+        <author>Henrik Gurtmann</author>
+        <copyright>(c) by Henrik Gurtmann</copyright>
+        <version>1.0.0</version>
+        <icon>icon.png</icon>
+        <license>MIT</license>
+    </meta>
+</manifest>

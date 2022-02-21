@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Produktdetailseite</title>
+        <input-field type="bool">
+            <name>alertProductDetailActive</name>
+            <label>Enable alert</label>
+            <label lang="de-DE">Hinweis anzeigen</label>
+        </input-field>
+        <input-field>
+            <name>alertProductDetailMessage</name>
+            <label>Alert text</label>
+            <label lang="de-DE">Hinweistext</label>
+        </input-field>
+        <input-field type="single-select">
+            <name>alertProductDetailType</name>
+            <label>Type of alert</label>
+            <label lang="de-DE">Art des Hinweises</label>
+            <options>
+                <option>
+                    <id>info</id>
+                    <name>Information (blue)</name>
+                    <name lang="de-DE">Information (Blau)</name>
+                </option>
+                <option>
+                    <id>warning</id>
+                    <name>Warning (orange)</name>
+                    <name lang="de-DE">Warnmeldung (Orange)</name>
+                </option>
+                <option>
+                    <id>danger</id>
+                    <name>Danger (red)</name>
+                    <name lang="de-DE">Gefahrenmeldung (Rot)</name>
+                </option>
+                <option>
+                    <id>success</id>
+                    <name>Success (green)</name>
+                    <name lang="de-DE">Erfolgsmeldung (Grün)</name>
+                </option>
+            </options>
+        </input-field>
+        <input-field type="single-select">
+            <name>alertProductDetailPosition</name>
+            <label>Position des Hinweises</label>
+            <options>
+                <option>
+                    <id>1</id>
+                    <name>Above the product name</name>
+                    <name lang="de-DE">Über dem Produktnamen</name>
+                </option>
+                <option>
+                    <id>2</id>
+                    <name>Above the shopping cart button</name>
+                    <name lang="de-DE">Oberhalb des Warenkorb-Buttons</name>
+                </option>
+                <option>
+                    <id>3</id>
+                    <name>Below the shopping cart button</name>
+                    <name lang="de-DE">Unterhalb des Warenkorb-Buttons</name>
+                </option>
+            </options>
+        </input-field>
+    </card>
+    <card>
+        <title>Shop header</title>
+        <title lang="de-DE">Shop-Kopfzeile</title>
+        <input-field type="bool">
+            <name>alertShopHeaderActive</name>
+            <label>Enable alert</label>
+            <label lang="de-DE">Hinweis anzeigen</label>
+        </input-field>
+        <input-field type="text">
+            <name>alertShopHeaderText</name>
+            <label>Alert text</label>
+            <label lang="de-DE">Hinweistext</label>
+        </input-field>
+        <input-field type="bool">
+            <name>alertShopHeaderTextBold</name>
+            <label>Text bold</label>
+            <label lang="de-DE">Text fett</label>
+        </input-field>
+        <input-field type="bool">
+            <name>alertShopHeaderTextCentered</name>
+            <label>Text centered</label>
+            <label lang="de-DE">Text zentriert</label>
+        </input-field>
+        <input-field type="colorpicker">
+            <name>alertShopHeaderBackgroundColor</name>
+            <label>Hintergrundfarbe</label>
+        </input-field>
+        <input-field type="colorpicker">
+            <name>alertShopHeaderTextColor</name>
+            <label>Textfarbe</label>
+        </input-field>
+    </card>
+</config>
