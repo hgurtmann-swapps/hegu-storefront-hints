@@ -8,8 +8,30 @@
         <description lang="de-DE">Informiere Deine Kunden mit individuellen Hinweisen und Kundeninformation in Deinem Shop. Durch zahlreiche Einstellungsmöglichkeiten bestimmst Du, wie und wo du die Hinweise anzeigst.</description>
         <author>Henrik Gurtmann</author>
         <copyright>(c) by Henrik Gurtmann</copyright>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
         <icon>Resources/config/icon.png</icon>
         <license>MIT</license>
     </meta>
+    <custom-fields>
+        <custom-field-set>
+            <name>hegu_storefront_hints</name>
+            <label>Individual hints</label>
+            <label lang="de-DE">Individuelle Hinweise</label>
+            <related-entities>
+                <product/>
+            </related-entities>
+            <fields>
+                <bool name="hegu_storefront_hints_product_detail_1_active">
+                    <position>1</position>
+                    <label>Enable alert 1 for this product</label>
+                    <label lang="de-DE">Hinweis 1 für diesen Artikel anzeigen</label>
+                </bool>
+                <bool name="hegu_storefront_hints_product_detail_2_active">
+                    <position>2</position>
+                    <label>Enable alert 2 for this product</label>
+                    <label lang="de-DE">Hinweis 2 für diesen Artikel anzeigen</label>
+                </bool>
+            </fields>
+        </custom-field-set>
+    </custom-fields>
 </manifest>

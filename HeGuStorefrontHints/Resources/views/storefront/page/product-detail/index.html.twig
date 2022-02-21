@@ -4,16 +4,20 @@
 
 {% block page_product_detail_inner %}
     {% if HeGuStorefrontHintsAppConfig.alertProductDetail1Active and HeGuStorefrontHintsAppConfig.alertProductDetail1Position == '1' %}
-        {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with {
-            type: HeGuStorefrontHintsAppConfig.alertProductDetail1Type,
-            content: HeGuStorefrontHintsAppConfig.alertProductDetail1Message
-        } %}
+        {% if HeGuStorefrontHintsAppConfig.alertProductDetail1DisplayMode == 'global' or page.product.customFields.hegu_storefront_hints_product_detail_1_active %}
+            {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with {
+                type: HeGuStorefrontHintsAppConfig.alertProductDetail1Type,
+                content: HeGuStorefrontHintsAppConfig.alertProductDetail1Message
+            } %}
+        {% endif %}
     {% endif %}
     {% if HeGuStorefrontHintsAppConfig.alertProductDetail2Active and HeGuStorefrontHintsAppConfig.alertProductDetail2Position == '1' %}
-        {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with {
-            type: HeGuStorefrontHintsAppConfig.alertProductDetail2Type,
-            content: HeGuStorefrontHintsAppConfig.alertProductDetail2Message
-        } %}
+        {% if HeGuStorefrontHintsAppConfig.alertProductDetail2DisplayMode == 'global' or page.product.customFields.hegu_storefront_hints_product_detail_2_active %}
+            {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with {
+                type: HeGuStorefrontHintsAppConfig.alertProductDetail2Type,
+                content: HeGuStorefrontHintsAppConfig.alertProductDetail2Message
+            } %}
+        {% endif %}
     {% endif %}
 
     {{ parent() }}

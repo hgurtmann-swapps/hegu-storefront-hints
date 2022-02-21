@@ -41,16 +41,36 @@
         </input-field>
     </card>
     <card>
-        <title>Produktdetailseite</title>
+        <title>Product detail page</title>
+        <title lang="de-DE">Produktdetailseite</title>
         <input-field type="bool">
             <name>alertProductDetail1Active</name>
             <label>Enable alert 1</label>
             <label lang="de-DE">Hinweis 1 anzeigen</label>
         </input-field>
-        <input-field type="bool">
-            <name>alertProductDetail2Active</name>
-            <label>Enable alert 2</label>
-            <label lang="de-DE">Hinweis 2 anzeigen</label>
+        <input-field type="single-select">
+            <name>alertProductDetail1DisplayMode</name>
+            <label>Display mode for alert 1</label>
+            <label lang="de-DE">Anzeige-Modus für Hinweis 1</label>
+            <helpText>It can be set whether the hint is displayed for all products or whether this must be activated
+                individually in the custom field in the product.
+            </helpText>
+            <helpText lang="de-DE">Es kann eingestellt werden, ob der Hinweis für alle Produkte angezeigt wird oder ob
+                dies in dem Custom-Field im Produkt einzeln aktiviert werden muss.
+            </helpText>
+            <defaultValue>global</defaultValue>
+            <options>
+                <option>
+                    <id>global</id>
+                    <name>Global for all products</name>
+                    <name lang="de-DE">Global für alle Produkte</name>
+                </option>
+                <option>
+                    <id>product</id>
+                    <name>Settable per product</name>
+                    <name lang="de-DE">Einstellbar pro Artikel</name>
+                </option>
+            </options>
         </input-field>
         <input-field>
             <name>alertProductDetail1Message</name>
@@ -108,7 +128,39 @@
                 </option>
             </options>
         </input-field>
-
+    </card>
+    <card>
+        <title>Product detail page</title>
+        <title lang="de-DE">Produktdetailseite</title>
+        <input-field type="bool">
+            <name>alertProductDetail2Active</name>
+            <label>Enable alert 2</label>
+            <label lang="de-DE">Hinweis 2 anzeigen</label>
+        </input-field>
+        <input-field type="single-select">
+            <name>alertProductDetail2DisplayMode</name>
+            <label>Display mode for alert 2</label>
+            <label lang="de-DE">Anzeige-Modus für Hinweis 2</label>
+            <helpText>It can be set whether the hint is displayed for all products or whether this must be activated
+                individually in the custom field in the product.
+            </helpText>
+            <helpText lang="de-DE">Es kann eingestellt werden, ob der Hinweis für alle Produkte angezeigt wird oder ob
+                dies in dem Custom-Field im Produkt einzeln aktiviert werden muss.
+            </helpText>
+            <defaultValue>global</defaultValue>
+            <options>
+                <option>
+                    <id>global</id>
+                    <name>Global for all products</name>
+                    <name lang="de-DE">Global für alle Produkte</name>
+                </option>
+                <option>
+                    <id>product</id>
+                    <name>Settable per product</name>
+                    <name lang="de-DE">Einstellbar pro Artikel</name>
+                </option>
+            </options>
+        </input-field>
         <input-field>
             <name>alertProductDetail2Message</name>
             <label>Alert text (Alert 2)</label>
