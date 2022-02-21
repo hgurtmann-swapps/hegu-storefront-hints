@@ -43,19 +43,24 @@
     <card>
         <title>Produktdetailseite</title>
         <input-field type="bool">
-            <name>alertProductDetailActive</name>
-            <label>Enable alert</label>
-            <label lang="de-DE">Hinweis anzeigen</label>
+            <name>alertProductDetail1Active</name>
+            <label>Enable alert 1</label>
+            <label lang="de-DE">Hinweis 1 anzeigen</label>
+        </input-field>
+        <input-field type="bool">
+            <name>alertProductDetail2Active</name>
+            <label>Enable alert 2</label>
+            <label lang="de-DE">Hinweis 2 anzeigen</label>
         </input-field>
         <input-field>
-            <name>alertProductDetailMessage</name>
-            <label>Alert text</label>
-            <label lang="de-DE">Hinweistext</label>
+            <name>alertProductDetail1Message</name>
+            <label>Alert text (Alert 1)</label>
+            <label lang="de-DE">Hinweistext (Hinweis 1)</label>
         </input-field>
         <input-field type="single-select">
-            <name>alertProductDetailType</name>
-            <label>Type of alert</label>
-            <label lang="de-DE">Art des Hinweises</label>
+            <name>alertProductDetail1Type</name>
+            <label>Type of alert (Alert 1)</label>
+            <label lang="de-DE">Art des Hinweises (Hinweis 1)</label>
             <options>
                 <option>
                     <id>info</id>
@@ -80,8 +85,68 @@
             </options>
         </input-field>
         <input-field type="single-select">
-            <name>alertProductDetailPosition</name>
-            <label>Position des Hinweises</label>
+            <name>alertProductDetail1Position</name>
+            <label>Position of alert (Alert 1)</label>
+            <label lang="de-DE">Position des Hinweises (Hinweis 1)</label>
+            <helpText>The setting "Above the product name" only works if NO individual layout of the product detail page (Shopping Experiences) is used!</helpText>
+            <helpText lang="de-DE">Die Einstellung "Über dem Produktnamen" funktioniert nur, wenn KEIN individuelles Layout der Produktdetailseite (Erlebniswelt) verwendet wird!</helpText>
+            <options>
+                <option>
+                    <id>1</id>
+                    <name>Above the product name</name>
+                    <name lang="de-DE">Über dem Produktnamen</name>
+                </option>
+                <option>
+                    <id>2</id>
+                    <name>Above the shopping cart button</name>
+                    <name lang="de-DE">Oberhalb des Warenkorb-Buttons</name>
+                </option>
+                <option>
+                    <id>3</id>
+                    <name>Below the shopping cart button</name>
+                    <name lang="de-DE">Unterhalb des Warenkorb-Buttons</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field>
+            <name>alertProductDetail2Message</name>
+            <label>Alert text (Alert 2)</label>
+            <label lang="de-DE">Hinweistext (Hinweis 2)</label>
+        </input-field>
+        <input-field type="single-select">
+            <name>alertProductDetail2Type</name>
+            <label>Type of alert (Alert 2)</label>
+            <label lang="de-DE">Art des Hinweises (Hinweis 2)</label>
+            <options>
+                <option>
+                    <id>info</id>
+                    <name>Information (blue)</name>
+                    <name lang="de-DE">Information (Blau)</name>
+                </option>
+                <option>
+                    <id>warning</id>
+                    <name>Warning (orange)</name>
+                    <name lang="de-DE">Warnmeldung (Orange)</name>
+                </option>
+                <option>
+                    <id>danger</id>
+                    <name>Danger (red)</name>
+                    <name lang="de-DE">Gefahrenmeldung (Rot)</name>
+                </option>
+                <option>
+                    <id>success</id>
+                    <name>Success (green)</name>
+                    <name lang="de-DE">Erfolgsmeldung (Grün)</name>
+                </option>
+            </options>
+        </input-field>
+        <input-field type="single-select">
+            <name>alertProductDetail2Position</name>
+            <label>Position of alert (Alert 2)</label>
+            <label lang="de-DE">Position des Hinweises (Hinweis 2)</label>
+            <helpText>The setting "Above the product name" only works if NO individual layout of the product detail page (Shopping Experiences) is used!</helpText>
+            <helpText lang="de-DE">Die Einstellung "Über dem Produktnamen" funktioniert nur, wenn KEIN individuelles Layout der Produktdetailseite (Erlebniswelt) verwendet wird!</helpText>
             <options>
                 <option>
                     <id>1</id>

@@ -1,8 +1,8 @@
-{% sw_extends '@Storefront/storefront/page/product-detail/buy-widget.html.twig' %}
+{% sw_extends '@Storefront/storefront/component/buy-widget/buy-widget.html.twig' %}
 
 {% set HeGuStorefrontHintsAppConfig = config('HeGuStorefrontHints.config') %}
 
-{% block page_product_detail_buy_form %}
+{% block buy_widget_buy_form %}
     {% if HeGuStorefrontHintsAppConfig.alertProductDetail1Active and HeGuStorefrontHintsAppConfig.alertProductDetail1Position == '2' %}
         {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with {
             type: HeGuStorefrontHintsAppConfig.alertProductDetail1Type,

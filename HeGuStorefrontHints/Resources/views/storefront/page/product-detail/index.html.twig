@@ -1,12 +1,18 @@
 {% sw_extends '@Storefront/storefront/page/product-detail/index.html.twig' %}
 
-{% set appConfig = config('HeGuStorefrontHints.config') %}
+{% set HeGuStorefrontHintsAppConfig = config('HeGuStorefrontHints.config') %}
 
 {% block page_product_detail_inner %}
-    {% if appConfig.alertProductDetailActive and appConfig.alertProductDetailPosition == '1' %}
+    {% if HeGuStorefrontHintsAppConfig.alertProductDetail1Active and HeGuStorefrontHintsAppConfig.alertProductDetail1Position == '1' %}
         {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with {
-            type: appConfig.alertProductDetailType,
-            content: appConfig.alertProductDetailMessage
+            type: HeGuStorefrontHintsAppConfig.alertProductDetail1Type,
+            content: HeGuStorefrontHintsAppConfig.alertProductDetail1Message
+        } %}
+    {% endif %}
+    {% if HeGuStorefrontHintsAppConfig.alertProductDetail2Active and HeGuStorefrontHintsAppConfig.alertProductDetail2Position == '1' %}
+        {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with {
+            type: HeGuStorefrontHintsAppConfig.alertProductDetail2Type,
+            content: HeGuStorefrontHintsAppConfig.alertProductDetail2Message
         } %}
     {% endif %}
 
