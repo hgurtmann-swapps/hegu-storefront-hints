@@ -8,7 +8,7 @@
         <description lang="de-DE">Informiere Deine Kunden mit individuellen Hinweisen und Kundeninformation in Deinem Shop. Durch zahlreiche Einstellungsmöglichkeiten bestimmst Du, wie und wo du die Hinweise anzeigst.</description>
         <author>Henrik Gurtmann</author>
         <copyright>(c) by Henrik Gurtmann</copyright>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <icon>icon.png</icon>
         <license>MIT</license>
     </meta>

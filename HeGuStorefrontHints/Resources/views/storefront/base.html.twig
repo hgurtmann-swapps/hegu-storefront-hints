@@ -5,7 +5,7 @@
 {% block base_header %}
     {% if appConfig.alertShopHeaderActive %}
         <div
-            style="background-color: {{ ((appConfig.alertShopHeaderBackgroundColor) ? appConfig.alertShopHeaderBackgroundColor : '#000000') }}">
+            style="background-color: {{ ((appConfig.alertShopHeaderBackgroundColor) ? appConfig.alertShopHeaderBackgroundColor : '#000000') }}" class="{{ ((appConfig.alertShopHeaderSticky) ? 'sticky-top' : '') }}">
             <div class="container py-2"
                  style="color: {{ ((appConfig.alertShopHeaderTextColor) ? appConfig.alertShopHeaderTextColor : '#ffffff') }}">
                 <div

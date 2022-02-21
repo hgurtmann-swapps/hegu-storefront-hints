@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
-
+    <card>
+        <title>Shop header</title>
+        <title lang="de-DE">Shop-Kopfzeile</title>
+        <input-field type="bool">
+            <name>alertShopHeaderActive</name>
+            <label>Enable alert</label>
+            <label lang="de-DE">Hinweis anzeigen</label>
+        </input-field>
+        <input-field type="bool">
+            <name>alertShopHeaderSticky</name>
+            <label>Alert fixed above</label>
+            <label lang="de-DE">Hinweis fixieren</label>
+        </input-field>
+        <input-field type="text">
+            <name>alertShopHeaderText</name>
+            <label>Alert text</label>
+            <label lang="de-DE">Hinweistext</label>
+        </input-field>
+        <input-field type="bool">
+            <name>alertShopHeaderTextBold</name>
+            <label>Text bold</label>
+            <label lang="de-DE">Text fett</label>
+        </input-field>
+        <input-field type="bool">
+            <name>alertShopHeaderTextCentered</name>
+            <label>Text centered</label>
+            <label lang="de-DE">Text zentriert</label>
+        </input-field>
+        <input-field type="colorpicker">
+            <name>alertShopHeaderBackgroundColor</name>
+            <label>Background color</label>
+            <label lang="de-DE">Hintergrundfarbe</label>
+        </input-field>
+        <input-field type="colorpicker">
+            <name>alertShopHeaderTextColor</name>
+            <label>Text color</label>
+            <label lang="de-DE">Textfarbe</label>
+        </input-field>
+    </card>
     <card>
         <title>Produktdetailseite</title>
         <input-field type="bool">
@@ -61,38 +99,6 @@
                     <name lang="de-DE">Unterhalb des Warenkorb-Buttons</name>
                 </option>
             </options>
-        </input-field>
-    </card>
-    <card>
-        <title>Shop header</title>
-        <title lang="de-DE">Shop-Kopfzeile</title>
-        <input-field type="bool">
-            <name>alertShopHeaderActive</name>
-            <label>Enable alert</label>
-            <label lang="de-DE">Hinweis anzeigen</label>
-        </input-field>
-        <input-field type="text">
-            <name>alertShopHeaderText</name>
-            <label>Alert text</label>
-            <label lang="de-DE">Hinweistext</label>
-        </input-field>
-        <input-field type="bool">
-            <name>alertShopHeaderTextBold</name>
-            <label>Text bold</label>
-            <label lang="de-DE">Text fett</label>
-        </input-field>
-        <input-field type="bool">
-            <name>alertShopHeaderTextCentered</name>
-            <label>Text centered</label>
-            <label lang="de-DE">Text zentriert</label>
-        </input-field>
-        <input-field type="colorpicker">
-            <name>alertShopHeaderBackgroundColor</name>
-            <label>Hintergrundfarbe</label>
-        </input-field>
-        <input-field type="colorpicker">
-            <name>alertShopHeaderTextColor</name>
-            <label>Textfarbe</label>
         </input-field>
     </card>
 </config>
