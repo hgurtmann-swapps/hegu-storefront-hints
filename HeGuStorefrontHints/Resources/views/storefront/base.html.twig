@@ -9,7 +9,7 @@
             <div class="container py-2"
                  style="color: {{ ((appConfig.alertShopHeaderTextColor) ? appConfig.alertShopHeaderTextColor : '#ffffff') }}">
                 <div
-                    class="{{ ((appConfig.alertShopHeaderTextBold) ? 'font-weight-bold ' : '') }} {{ ((appConfig.alertShopHeaderTextCentered) ? 'text-center ' : '') }}">{{ appConfig.alertShopHeaderText }}</div>
+                    class="{{ ((appConfig.alertShopHeaderTextBold) ? 'font-weight-bold ' : '') }} {{ ((appConfig.alertShopHeaderTextCentered) ? 'text-center ' : '') }}">{{ appConfig.alertShopHeaderText|raw }}</div>
             </div>
         </div>
     {% endif %}
